@@ -25,7 +25,8 @@ function appendKitten(name){
 }
 
 function prependKitten(name){
-  return kittens.splice(kittens.length - 2, 0, name)
+  var newKittenArray = kittens.splice(kittens.length - 2, 0, name)
+  return newKittenArray
 }
 
 function removeLastKitten(){
